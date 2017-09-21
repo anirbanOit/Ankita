@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.oit.test.img_to_base64.MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:src="@drawable/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    
+   <!-- <TextView
+        android:id="@+id/tv_base"
+        android:layout_width="match_parent"
+        android:hint="Base64 Code"
+        android:scrollbars="vertical"
+        android:layout_height="100dp"
+        android:layout_below="@+id/img"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />-->
+    
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Image to Base64"
+        android:layout_below="@+id/img"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Base64 to Image"
+        android:layout_below="@+id/img"
+        android:layout_toRightOf="@+id/btn1"/>
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/btn1"/>
+
+</RelativeLayout>
