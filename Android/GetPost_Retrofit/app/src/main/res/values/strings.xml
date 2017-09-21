@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GetPost_Retrofit</string>
+    <string name="string_click_to_load">string click to load</string>
+    <string name="string_getting_json_title">string getting json title</string>
+    <string name="string_getting_json_message">string getting json message</string>
+    <string name="string_some_thing_wrong">string some thing wrong</string>
+    <string name="string_internet_connection_not_available">string internet connection not available</string>
+</resources>
