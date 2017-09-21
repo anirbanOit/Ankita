@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/userLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/search"
+    android:layout_marginTop="10dp"
+    android:background="#E8EAF7"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/studphoto_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textColor="#4D4E52"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/agelable_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_tv"
+                android:layout_marginTop="10dp"
+                android:hint="@string/age"
+                android:paddingLeft="10dp"
+                android:textColor="#A2A5AE"
+                android:textSize="20sp"
+
+                />
+
+            <TextView
+                android:id="@+id/age_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_tv"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/agelable_tv"
+                android:paddingLeft="8sp"
+                android:textColor="#A2A5AE"
+
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/deptlabel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/agelable_tv"
+                android:hint="@string/department"
+                android:paddingLeft="10dp"
+                android:textColor="#A2A5AE"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/dept_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/agelable_tv"
+                android:layout_toRightOf="@id/deptlabel_tv"
+                android:paddingLeft="8sp"
+                android:textColor="#A2A5AE"
+                android:textSize="20sp"
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

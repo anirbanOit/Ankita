@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.oit.test.api.LoginActivity">
+
+<EditText
+    android:id="@+id/email"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/email"
+    android:drawablePadding="10dp"
+    android:drawableLeft="@drawable/email"
+    android:inputType="textEmailAddress"
+    android:layout_marginTop="14dp"
+    android:layout_below="@+id/imageView2"
+    android:layout_centerHorizontal="true" />
+
+<EditText
+    android:id="@+id/pwd"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/password"
+    android:drawableLeft="@drawable/pwd"
+    android:drawablePadding="10dp"
+    android:inputType="textPassword"
+    android:layout_below="@+id/email"
+    android:layout_alignLeft="@+id/email"
+    android:layout_alignStart="@+id/email"
+    android:layout_marginTop="27dp" />
+
+    <ImageView
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/show_pass"
+        android:layout_alignTop="@+id/pwd"
+        android:layout_toRightOf="@+id/pwd"
+        android:layout_toEndOf="@+id/pwd"
+        android:layout_marginLeft="19dp"
+        android:visibility="visible"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="13dp" />
+
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hide_pass"
+        android:id="@+id/hide"
+        android:visibility="gone"
+        android:layout_alignBottom="@+id/show"
+        android:layout_alignRight="@+id/show"
+        android:layout_alignEnd="@+id/show" />
+-->
+
+    <Button
+        android:id="@+id/btnWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="@string/login"
+        android:layout_below="@+id/pwd"
+        android:layout_centerHorizontal="true" />
+
+<ImageView
+    android:id="@+id/imageView"
+    android:contentDescription="@string/app_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="53dp"
+    app:srcCompat="@color/colorAccent" />
+
+<ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:gravity="center"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/login"
+    android:layout_alignTop="@+id/imageView" />
+
+</RelativeLayout>

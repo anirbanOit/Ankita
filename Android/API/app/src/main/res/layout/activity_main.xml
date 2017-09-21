@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/topPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.oit.test.api.MainActivity">
+
+            <EditText
+                android:id="@+id/txt_fname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_bg"
+                android:drawableStart="@drawable/icn_name"
+                android:drawableLeft="@drawable/icn_name"
+                android:drawablePadding="10dp"
+                android:hint="@string/firstName"
+                android:padding="5dp"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="42dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/txt_lname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout"
+                android:layout_below="@+id/txt_fname"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/text_bg"
+                android:drawableStart="@drawable/icn_name"
+                android:drawableLeft="@drawable/icn_name"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/lastName"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="42dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txt_lname"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_bg"
+                    android:text="@string/male"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_bg"
+                    android:text="@string/female" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lbl_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayout"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/date_of_birth"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/lbl_dob"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/text_bg"
+                android:padding="1dp">
+
+                <EditText
+                    android:id="@+id/txt_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/mm_dd_yyyy"
+                    android:padding="5dp"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/img_dob"
+                    android:contentDescription="@string/DOB"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="#E6E6E6"
+                    android:padding="1dp"
+                    android:src="@drawable/icn_dob" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/lbl_dpt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dob"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/department"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_dpt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/department">
+
+                <Spinner
+                    android:id="@+id/drop_dept"
+                    android:layout_width="400dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:entries="@array/dept_arrays"
+                    android:padding="5dp"
+                    android:spinnerMode="dropdown"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignLeft="@+id/btn_add"
+                android:layout_alignStart="@+id/btn_add"
+                android:layout_below="@+id/spinner"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/img" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/photo"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/lbl_dpt"
+                android:layout_toRightOf="@+id/lbl_dpt"
+                android:background="@drawable/edit"
+                android:text="@string/add" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topPanel">
+
+            <Button
+                android:id="@+id/btn_preview"
+                android:layout_alignParentBottom="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit"
+                android:text="@string/preview" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

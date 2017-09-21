@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">API</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="dob">mm/dd/yyyy</string>
+    <string name="nameerror">name error </string>
+    <string name="dateerror">date error </string>
+    <string name="department">Department:</string>
+    <string name="mm_dd_yyyy">mm/dd/yyyy</string>
+    <string name="search">Search...</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="date_of_birth">Date of Birth:</string>
+    <string name="DOB">DOB</string>
+    <string name="add">ADD</string>
+    <string name="preview">PREVIEW</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="age">Age:</string>
+    <string name="name">Name :</string>
+    <string name="gender">Gender :</string>
+    <string name="dateofbirth">Date of Birth :</string>
+    <string name="departmnt">Department :</string>
+
+    <string-array name="dept_arrays">
+
+        <item>Options</item>
+        <item>HR</item>
+        <item>Android</item>
+        <item>iOS</item>
+        <item>Dot Net</item>
+        <item>PHP</item>
+        <item>Salesforce</item>
+        <item>QA</item>
+
+    </string-array>
+
+</resources>
