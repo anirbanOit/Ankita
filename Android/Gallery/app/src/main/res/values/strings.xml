@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Gallery</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="Home">Home</string>
+    <string name="selected_image">SELECT IMAGES:</string>
+</resources>

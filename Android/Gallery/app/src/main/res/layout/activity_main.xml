@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3f2fd"
+    tools:context=".GalleryActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|start"
+        android:padding="10dp"
+        android:src="@drawable/icon_logout"
+        app:backgroundTint="@android:color/transparent"
+        app:fabSize="normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?android:attr/textColorHighlightInverse"
+        android:clickable="true"
+        android:columnWidth="100dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:padding="25dp"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:textAlignment="center" />
+
+</RelativeLayout>
